@@ -1,5 +1,5 @@
 
-package com.hogo.rahul.retrofitusingjson;
+package com.hogo.rahul.retrofitusingjson.Activity;
 
 import java.util.List;
 

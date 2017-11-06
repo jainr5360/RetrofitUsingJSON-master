@@ -1,5 +1,5 @@
 
-package com.hogo.rahul.retrofitusingjson;
+package com.hogo.rahul.retrofitusingjson.Activity;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

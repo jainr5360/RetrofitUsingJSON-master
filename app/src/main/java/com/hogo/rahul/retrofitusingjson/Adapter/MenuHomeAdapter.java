@@ -1,8 +1,6 @@
-package com.hogo.rahul.retrofitusingjson;
+package com.hogo.rahul.retrofitusingjson.Adapter;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,8 +8,8 @@ import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
+import com.hogo.rahul.retrofitusingjson.R;
+import com.hogo.rahul.retrofitusingjson.Retrofit2.MyResponse;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,11 +21,11 @@ import java.util.List;
 public class MenuHomeAdapter extends RecyclerView.Adapter<MenuHomeAdapter.ViewHolder> {
 
     Context context;
-    List<Userdatum> homeDetailsList = new ArrayList<>();
+    List<MyResponse.UserdataBean> homeDetailsList = new ArrayList<>();
     LayoutInflater inflater;
     int categoryId;
 
-    public MenuHomeAdapter(Context context, List<Userdatum> homeDetailsList1) {
+    public MenuHomeAdapter(Context context, List<MyResponse.UserdataBean> homeDetailsList1) {
         this.context = context;
         this.homeDetailsList = homeDetailsList1;
         inflater = LayoutInflater.from(context);
@@ -46,7 +44,7 @@ public class MenuHomeAdapter extends RecyclerView.Adapter<MenuHomeAdapter.ViewHo
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
 
-        final Userdatum details = homeDetailsList.get(position);
+        final MyResponse.UserdataBean details = homeDetailsList.get(position);
         holder.tv.setText(details.getName());
 
 //        ImageLoader imgLoader = ImageLoader.getInstance();

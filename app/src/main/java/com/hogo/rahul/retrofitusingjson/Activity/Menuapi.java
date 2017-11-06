@@ -1,4 +1,4 @@
-package com.hogo.rahul.retrofitusingjson;
+package com.hogo.rahul.retrofitusingjson.Activity;
 
 import retrofit2.Call;
 import retrofit2.Retrofit;

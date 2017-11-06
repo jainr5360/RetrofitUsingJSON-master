@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RetrofitUsingJSON</string>
+    <string name="title_activity_sub_item">SubItemActivity</string>
 </resources>
